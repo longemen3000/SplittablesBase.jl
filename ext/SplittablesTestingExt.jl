@@ -3,7 +3,7 @@ using SplittablesBase
 
 using Test: @test, @testset
 using SplittablesBase: amount, halve
-using SplittablesBase.Testing: getdata, countmap, recursive_vcat
+using SplittablesBase.Testing: getdata, getlabel, countmap, recursive_vcat
 
 
 function SplittablesBase.Testing.test_ordered(examples)
