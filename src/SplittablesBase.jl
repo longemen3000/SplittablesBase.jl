@@ -12,10 +12,11 @@ end  # module
 
 module Testing
     include("testing.jl")
+    if !isdefined(Base,:get_extension)
+        include("../ext/SplittablesTestingExt.jl")
+    end
 end
 
-if !isdefined(Base,:get_extension)
-    include("../ext/SplittablesTestingExt.jl")
-end
+
 
 end # module
