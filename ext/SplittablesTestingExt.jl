@@ -17,7 +17,7 @@ function SplittablesBase.Testing.test_ordered(examples)
             vec(collect(getdata(x))),
             )
         end
-        test_recursive_halving(x)
+        SplittablesBase.Testing.test_recursive_halving(x)
     end
 end
 
@@ -32,7 +32,7 @@ function SplittablesBase.Testing.test_unordered(examples)
             merge(+, countmap(collect(left)), countmap(collect(right))),
             )
         end
-        test_recursive_halving(x)
+        SplittablesBase.Testing.test_recursive_halving(x)
     end
 end
 
