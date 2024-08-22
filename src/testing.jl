@@ -1,4 +1,4 @@
-using ..SplittablesBase: halve
+using ..SplittablesBase: halve, amount
 
 # Load docstring from markdown files:
 for (name, path) in [:test_ordered => joinpath(@__DIR__, "test_ordered.md")]
