@@ -11,9 +11,11 @@ include("implementations.jl")
 end  # module
 
 module Testing
-using Test: @test, @testset
-using ..SplittablesBase: amount, halve
-include("testing.jl")
-end  # module
+    include("testing.jl")
+end
+
+if !isdefined(Base,:get_extension)
+    include("../ext/SplittablesTestingExt.jl")
+end
 
 end # module
